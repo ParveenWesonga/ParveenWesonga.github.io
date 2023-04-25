@@ -1,11 +1,11 @@
 {
-    "name": "digitalmarketing",
-    "short_name": "digitalmarketing",
+    "name": "extension_system",
+    "short_name": "extension_system",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
     "theme_color": "#0175C2",
-    "description": "A digital marketing website",
+    "description": "A new Flutter project.",
     "orientation": "portrait-primary",
     "prefer_related_applications": false,
     "icons": [
