@@ -64974,22 +64974,23 @@ while(true)switch(s){case 0:d=a4.a
 c=a4.b
 b=a2.a
 a=a2.b
+a0=t.N
 s=3
-return A.y(A.rG(A.dE("https://maps.googleapis.com/maps/api/directions/json?origin="+A.e(d)+","+A.e(c)+"&destination="+A.e(b)+","+A.e(a)+"&mode=driving&language=en-EN&key="+a3),null),$async$Ew)
-case 3:a0=a6
-a1=t.q_
-if(a0.b===200){p=A.a([],a1)
-o=B.al.bg(0,A.fs(A.fq(a0.e).c.a.h(0,"charset")).bg(0,a0.w))
+return A.y(A.rG(A.dE("https://maps.googleapis.com/maps/api/directions/json?origin="+A.e(d)+","+A.e(c)+"&destination="+A.e(b)+","+A.e(a)+"&mode=driving&language=en-EN&key="+a3),A.a_(["Access-Control-Allow-Origin","*"],a0,a0)),$async$Ew)
+case 3:a1=a6
+a0=t.q_
+if(a1.b===200){p=A.a([],a0)
+o=B.al.bg(0,A.fs(A.fq(a1.e).c.a.h(0,"charset")).bg(0,a1.w))
 n=J.ak(o)
-if(J.f(n.h(o,"status"),"OK")){a1=t.j
-m=a1.a(n.h(o,"routes"))
+if(J.f(n.h(o,"status"),"OK")){a0=t.j
+m=a0.a(n.h(o,"routes"))
 n=J.ak(m)
-l=a1.a(J.aD(n.h(m,0),"legs"))
-a1=J.ak(l)
-k=J.aD(J.aD(a1.h(l,0),"distance"),"text")
-j=J.aD(J.aD(a1.h(l,0),"duration"),"text")
+l=a0.a(J.aD(n.h(m,0),"legs"))
+a0=J.ak(l)
+k=J.aD(J.aD(a0.h(l,0),"distance"),"text")
+j=J.aD(J.aD(a0.h(l,0),"duration"),"text")
 i=A.bEy(A.b5(J.aD(J.aD(n.h(m,0),"overview_polyline"),"points")))
-for(a1=i.length,h=0;h<i.length;i.length===a1||(0,A.K)(i),++h){g=i[h]
+for(a0=i.length,h=0;h<i.length;i.length===a0||(0,A.K)(i),++h){g=i[h]
 p.push(A.jz(A.eW(g[0]),A.eW(g[1])))}A.f9("PolyCoordinates: "+p.length)
 $.V2()
 f=d*0.017453292519943295
@@ -64997,9 +64998,9 @@ e=b*0.017453292519943295
 d=a*0.017453292519943295-c*0.017453292519943295
 q=new A.D7(p,"Time: "+j+", Distance: "+k,Math.atan2(Math.sin(d)*Math.cos(e),Math.cos(f)*Math.sin(e)-Math.sin(f)*Math.cos(e)*Math.cos(d))*57.29577951308232)
 s=1
-break}else{q=new A.D7(A.a([],a1),"",0)
+break}else{q=new A.D7(A.a([],a0),"",0)
 s=1
-break}}else{q=new A.D7(A.a([],a1),"",0)
+break}}else{q=new A.D7(A.a([],a0),"",0)
 s=1
 break}case 1:return A.v(q,r)}})
 return A.w($async$Ew,r)},
